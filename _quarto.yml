@@ -3,3 +3,10 @@ project:
 
 website:
   title: "Shark Attacks"
+  navbar:
+    left:
+      - text: "Map"
+        href: map.qmd
+
+execute:
+  echo: false
