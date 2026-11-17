@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Shark Attacks",
+    "section": "",
+    "text": "The Global Shark Attack File is a collection of reported shark encounters from around the world. Its records include details such as the location, activity, and whether an attack was fatal.\nPublic fear of sharks is often out of proportion to the actual risk. Fatal shark attacks are rare, and media coverage can make isolated encounters seem more common than they are.\nThis site explores the data in two ways. The Map page shows where attacks were reported, while the Trends page examines patterns by activity and outcome."
+  },
+  {
+    "objectID": "map.html",
+    "href": "map.html",
+    "title": "Map",
+    "section": "",
+    "text": "Rows: 5094 Columns: 15\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (14): Case_Number, Date, Type, Country, Area, Location, Activity, Name, ...\ndbl  (1): Year\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\n\n\n\n\n\n\n\n\n\n\n# A tibble: 2 × 2\n  outcome   count\n  &lt;chr&gt;     &lt;int&gt;\n1 Non-fatal  3763\n2 Fatal       943"
+  },
+  {
+    "objectID": "trends.html",
+    "href": "trends.html",
+    "title": "Trends",
+    "section": "",
+    "text": "# A tibble: 22 × 3\n   Activity      Fatal_clean     n\n   &lt;chr&gt;         &lt;chr&gt;       &lt;int&gt;\n 1 Bathing       Fatal          31\n 2 Bathing       Non-fatal      35\n 3 Body boarding Fatal          14\n 4 Body boarding Non-fatal      48\n 5 Diving        Fatal          14\n 6 Diving        Non-fatal      78\n 7 Fishing       Fatal          32\n 8 Fishing       Non-fatal     337\n 9 Scuba diving  Fatal          12\n10 Scuba diving  Non-fatal      50\n# ℹ 12 more rows"
+  }
+]
