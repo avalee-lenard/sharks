@@ -1,0 +1,21 @@
+---
+title: "Trends"
+---
+
+```{r}
+#| message: false
+library(tidyverse)
+```
+
+```{r}
+attacks <- read_rds("data/attacks.rds")
+```
+
+```{r}
+attacks |>
+  filter(!is.na(Activity), Fatal_clean != "Unknown") |>
+  add_count(Activity) |>
+  filter(n >= 50) |>
+  count(Activity, Fatal_clean) |>
+  arrange(Activity, Fatal_clean)
+```
